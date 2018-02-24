@@ -1,0 +1,65 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+span {
+	color:rgba(255,0,0,1);
+	font-family: 'Raleway', sans-serif;
+	font-weight:700;
+}
+
+.navbar{
+	margin-bottom: 0px;
+	border: none;
+}
+
+.navbar-btn{
+	margin-right:20px;
+}
+
+.navbar-default{
+	border-radius: 0px;
+	background-color: #288f1c;
+	border: none;
+}
+
+.navbar-default  .navbar-brand {
+	color:#fff;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+	color:#fff;
+}
+
+.jumbotron{
+	background:
+		linear-gradient(
+		rgba(0,0,0, 0.6),
+		rgba(40,0,0, 0.6)
+		),
+		url(../assets/tlo.jpg) no-repeat;
+	height: 100%;
+	background-size: cover;
+	background-position: center; 
+}
+
+.jumbotron h1{
+	color: #fff;
+	padding:150px 0 0 0;
+}
+
+.jumbotron p{
+	color: #fff;
+	padding:0 0 150px 0;
+}
+
+.functions {
+	padding:40px 0;
+}
+
+.footer {
+	background:#1b1d1b;
+	color:#fff;
+	padding:30px;
+	text-align:center;
+}
