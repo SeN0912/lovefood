@@ -1,0 +1,133 @@
+<section class="user-content">
+	<main>
+		<div class="row">
+			<div class="col-md-2">
+				<div class="dashboard-nav bg-success text-light position-fixed">
+					<img src="assets/logo-white.png" alt="Logo aplikacji LoveFood">
+					<div class="user">
+						<p>Witaj!</p>
+						<h4>{{user}}</h4>
+					</div>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+					    	<a class="nav-link text-light" href="#!/recipes"><i class="fa fa-cutlery" aria-hidden="true"></i> Wszystkie przepisy</a>
+					  	</li>
+						<li class="nav-item">
+					    	<a class="nav-link text-light" href="#"><i class="fa fa-plus" aria-hidden="true"></i> Dodaj przepis</a>
+					  	</li>
+					</ul>
+					<ul class="nav flex-column">
+					  	<li class="nav-item">
+					    	<a class="nav-link text-light" href="#"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Moje przepisy</a>
+					  	</li>
+					  	<li class="nav-item">
+					    	<a class="nav-link text-light" href="#!/password"><i class="fa fa-cog" aria-hidden="true"></i> Zmień hasło</a>
+					  	</li>
+					</ul>
+					 <a class="btn btn-outline-light button" href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Wyloguj się</a>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="dashboard-content">
+					<div class="container">
+						<form class="form-row">
+						  <div class="col-11">
+						  	<input type="search" class="form-control" placeholder="wyszukaj">
+						  </div>
+						</form>
+						<hr>
+						<div class="row">
+							
+							<div class="col-md-4">
+								<div class="card" style="width: 18rem;">
+								  <img class="card-img-top" src="assets/background-home.jpg" alt="Card image cap">
+								  <div class="card-body">
+								    <h5 class="card-title">Przepis 1</h5>
+								    <form>
+								    	<div class="form-group">
+								    		<input type="text" class="form-control" placeholder="wpisz ilość porcji" ng-model="porcja">
+								    	</div> 
+								    	 <button class="btn btn-dark">Przelicz</button>
+								    </form>
+								    <p class="card-text">
+								    	<h5>Lista składników:</h5>
+								    	<ul>
+								    		<li>Składnik 1</li>
+								    		<li>Składnik 2</li>
+								    		<li>Składnik 3</li>
+								    		<li>Składnik 4</li>
+								    		<li>Składnik 5</li>
+								    	</ul>
+								    	<h5>Sposób przygotowania:</h5>
+								    	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis natus sed repudiandae accusantium consequatur, quos, recusandae ad optio eligendi, ut rem necessitatibus eum, dolore similique quam delectus earum libero.</p>
+								    	<p><i class="fa fa-hourglass-half" aria-hidden="true"></i> Czas przygotowania: 15 min</p>
+								    </p>
+								    <a href="#" class="btn btn-success"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Drukuj listę zakupów</a>
+								  </div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card" style="width: 18rem;">
+								  <img class="card-img-top" src="assets/background-login.jpg" alt="Card image cap">
+								  <div class="card-body">
+								    <h5 class="card-title">Przepis 2</h5>
+								   <form>
+								    	<div class="form-group">
+								    		<input type="text" class="form-control" placeholder="wpisz ilość porcji" ng-model="porcja">
+								    	</div> 
+								    	 <button class="btn btn-dark">Przelicz</button>
+								    </form>
+								    <p class="card-text">
+								    	<h5>Lista składników:</h5>
+								    	<ul>
+								    		<li>Składnik 1</li>
+								    		<li>Składnik 2</li>
+								    		<li>Składnik 3</li>
+								    		<li>Składnik 4</li>
+								    		<li>Składnik 5</li>
+								    	</ul>
+								    	<h5>Sposób przygotowania:</h5>
+								    	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis natus sed repudiandae accusantium consequatur, quos, recusandae ad optio eligendi, ut rem necessitatibus eum, dolore similique quam delectus earum libero.</p>
+								    	<p><i class="fa fa-hourglass-half" aria-hidden="true"></i> Czas przygotowania: 50 min</p>
+								    </p>
+								    <a href="#" class="btn btn-success"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Drukuj listę zakupów</a>
+								  </div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card" style="width: 18rem;">
+								  <img class="card-img-top" src="assets/background-register.jpg" alt="Card image cap">
+								  <div class="card-body">
+								    <h5 class="card-title">Przepis 3</h5>
+								   <form>
+								    	<div class="form-group">
+								    		<input type="text" class="form-control" placeholder="wpisz ilość porcji" ng-model="porcja">
+								    	</div> 
+								    	 <button class="btn btn-dark">Przelicz</button>
+								    </form>
+								     <p class="card-text">
+								    	<h5>Lista składników:</h5>
+								    	<ul>
+								    		<li>Składnik 1</li>
+								    		<li>Składnik 2</li>
+								    		<li>Składnik 3</li>
+								    		<li>Składnik 4</li>
+								    		<li>Składnik 5</li>
+								    	</ul>
+								    	<h5>Sposób przygotowania:</h5>
+								    	<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis natus sed repudiandae accusantium consequatur, quos, recusandae ad optio eligendi, ut rem necessitatibus eum, dolore similique quam delectus earum libero.</p>
+								    	<p><i class="fa fa-hourglass-half" aria-hidden="true"></i> Czas przygotowania: 40 min</p>
+								    </p>
+								    <a href="#" class="btn btn-success"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Drukuj listę zakupów</a>
+								  </div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</section>

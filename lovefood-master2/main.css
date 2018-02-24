@@ -1,0 +1,118 @@
+.home {	
+	background:linear-gradient(
+	rgba(0,0,0, 0.6),
+	rgba(0,0,0, 0.6)
+	),url('assets/background-home.jpg');
+	background-size:cover;
+	background-position:center center;
+	background-repeat: no-repeat;
+}
+
+.home h2 {
+	color:#fff;
+	padding:20px 0 20px 0;
+}
+
+.home button {
+	margin:10px;
+}
+
+.home-text {
+	min-width:100%;
+	min-height:100%;
+	padding:200px 0 400px 0;
+}
+
+.login-form {
+	background:linear-gradient(
+	rgba(0,0,0, 0.6),
+	rgba(0,0,0, 0.6)
+	),url('assets/background-login.jpg');
+	background-size:cover;
+	background-position:center center;
+	background-repeat: no-repeat;
+	min-height:1000px;
+	width:100%;
+}
+
+.login-content {
+	background:#fff;
+	min-height:1000px;
+	padding:200px 60px 0 60px;
+}
+
+.login-content h1 {
+	margin-bottom:20px;
+}
+
+.register-form {
+	background:linear-gradient(
+	rgba(0,0,0, 0.6),
+	rgba(0,0,0, 0.6)
+	),url('assets/background-register.jpg');
+	background-size:cover;
+	background-position:left;
+	background-repeat: no-repeat;
+	min-height:1000px;
+	width:100%;
+}
+
+.register-content {
+	background:#fff;
+	min-height:1000px;
+	padding:200px 60px 0 60px;
+}
+
+.register-content h1 {
+	margin-bottom:20px;
+}
+
+.dashboard-nav img {
+	height:45px;
+	margin:10px 5px;
+}
+
+.user-content main {
+	min-height:1000px;
+}
+
+.dashboard-nav {
+	min-height:100%;
+}
+
+.dashboard-nav .user {
+	padding:60px 20px 70px 20px;
+}
+
+.button {
+	margin-left:20px;
+}
+
+.dashboard-nav ul {
+	margin-bottom:50px;
+}
+
+.dashboard-content {
+	padding:20px 0 0 0;
+}
+
+.dashboard-content button {
+	margin:20px 0px 20px 5px;
+}
+
+i {
+	margin-right:10px;
+}
+
+.card {
+	margin-top:20px;
+}
+
+.card form {
+	padding:10px 0;
+}
+
+.card-img-top{
+	height:200px;
+	object-fit: cover;
+}
