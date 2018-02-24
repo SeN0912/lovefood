@@ -1,0 +1,96 @@
+<section class="user-content">
+	<main>
+		<div class="row">
+			<div class="col-md-2">
+				<div class="dashboard-nav bg-success text-light position-fixed">
+					<img src="assets/logo-white.png" alt="Logo aplikacji LoveFood">
+					<div class="user">
+						<p>Witaj!</p>
+						<h4>{{user}}</h4>
+					</div>
+					<ul class="nav flex-column">
+						<li class="nav-item">
+					    	<a class="nav-link text-light" href="#!/recipes"><i class="fa fa-cutlery" aria-hidden="true"></i> Wszystkie przepisy</a>
+					  	</li>
+						<li class="nav-item">
+					    	<a class="nav-link text-light" href="#!/add-recipes"><i class="fa fa-plus" aria-hidden="true"></i> Dodaj przepis</a>
+					  	</li>
+					</ul>
+					<ul class="nav flex-column">
+					  	<li class="nav-item">
+					    	<a class="nav-link text-light" href="#!/my-recipes"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Moje przepisy</a>
+					  	</li>
+					  	<li class="nav-item">
+					    	<a class="nav-link text-light" href="#!/password"><i class="fa fa-cog" aria-hidden="true"></i> Zmień hasło</a>
+					  	</li>
+					</ul>
+					 <a class="btn btn-outline-light button" href="#!/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Wyloguj się</a>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="dashboard-content" ng-init="selectIngredient();">
+					<div class="container">
+						<h2>Dodawanie przepisu</h2>
+							<div class="form-group">
+							    <label>Nazwa przepisu</label>
+							    <input type="text" class="form-control" placeholder="nazwa przepisu" ng-model="recipeName"/> 
+							  </div>
+							  <div class="form-group">
+							    <label>Zdjęcie potrawy:</label>
+							    <input type="file" class="form-control-file" file-input="files"/> 
+							  </div>
+							  <div class="form-group">
+							  	<label>Sposób przygotowania</label>
+							  	<textarea cols="30" rows="10" class="form-control" ng-model="directions"></textarea>
+							  </div>
+							  <div class="form-group ">
+							    <label>Czas przygotowania</label>
+							    <input type="number" class="form-control col-md-4" placeholder="czas przygotowania" ng-model="preparationTime"/> 
+							  </div>
+							   <div class="form-group ">
+							    <label>Ilość porcji</label>
+							    <input type="number" class="form-control col-md-4" placeholder="ilość porcji" ng-model="portion"/> 
+							  </div>
+							  <h2>Lista składników:</h2>
+							  <div class="form-inline">
+								  <div class="form-group">
+								  	<select class="form-control" ng-model="name">
+									  		<option ng-repeat="ingredient in ingredients">{{ingredient.ingredient_name}} ({{ingredient.unit}})</option>
+									 </select>
+								  </div>
+								  <div class="form-group">
+								  	<input type="number" class="form-control" ng-model="quantity" placeholder="ilość">
+								  </div>
+								  <div class="form-group">
+								  	<input type="button" class="form-control" value="Dodaj nowy składnik" ng-click="addIngredient();">
+								  </div>
+							  </div>
+							  <br>
+
+							  <table class="table">
+							  <thead>
+							    <tr>
+							      <th scope="col">Nazwa składniku</th>
+							      <th scope="col">ilość</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr ng-repeat="x in ingredientsArray">
+							      <td>{{x.name}}</td>
+							      <td>{{x.quantity}}</td>
+							    </tr>
+							  </tbody>
+							</table>
+							<button ng-click="ingreadientAdd();">Wykonaj funkcje</button>
+							  
+	      
+								      	
+								      							
+					 </div>
+						<button type="button" class="btn btn-primary" ng-click="addRecipe()"><i class="fa fa-plus" aria-hidden="true"></i> Dodaj przepis</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</section>
