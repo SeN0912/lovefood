@@ -1,0 +1,26 @@
+<section class="login-form">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="offset-md-5 col-md-7 login-content">
+			<h1>Zaloguj się</h1>
+			<form ng-submit="login()" name="loginForm" novalidate>
+				<div class="form-group">
+					<input type="email" placeholder="email" ng-model="username" class="form-control"  required name="username" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/">
+					<p class="text-danger" ng-show="(loginForm.$submitted && loginForm.username.$error.required ) || (loginForm.username.$touched && loginForm.username.$error.required)">Wpisz nazwę użytkownika!</p>
+					<p class="text-danger" ng-show="(loginForm.$submitted && loginForm.username.$error.pattern ) || (loginForm.username.$error.pattern)">Wpisz poprawnie email!</p>
+				</div>
+				<div class="form-group">
+					<input type="password" placeholder="hasło" ng-model="password" class="form-control" required name="password">
+					<p class="text-danger" ng-show="(loginForm.$submitted && loginForm.password.$error.required ) || (loginForm.password.$touched && loginForm.password.$error.required) ">Wpisz hasło!</p>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-outline-success btn-lg" type="submit"><i class="fa fa-sign-in" aria-hidden="true"></i> Zaloguj się</button>
+				</div>
+			</form>
+			<a href="/">powrót do strony głównej</a>
+		</div>
+		</div>
+	</div>
+</section>
+
+

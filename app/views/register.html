@@ -1,0 +1,24 @@
+<section class="register-form">
+	<div class="container-fluid">
+		<div class="row">
+		<div class="offset-md-5 col-md-7 register-content">
+			<h1>Rejestracja</h1>
+			<form ng-submit="register()" name="registerForm" novalidate>
+				<div class="form-group">
+					<input type="email" placeholder="email" ng-model="username" class="form-control" required name="username" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/">
+					<p class="text-danger" ng-show="(registerForm.$submitted && registerForm.username.$error.required ) || (registerForm.username.$touched && registerForm.username.$error.required)">Wpisz nazwę użytkownika!</p>
+					<p class="text-danger" ng-show="(registerForm.$submitted && registerForm.username.$error.pattern ) || (registerForm.username.$error.pattern)">Wpisz poprawnie email!</p>
+				</div>
+				<div class="form-group">
+					<input type="password" placeholder="hasło" ng-model="password" class="form-control" required name="password">
+					<p class="text-danger" ng-show="(registerForm.$submitted && registerForm.password.$error.required ) || (registerForm.password.$touched && registerForm.password.$error.required) ">Wpisz hasło!</p>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-outline-success btn-lg" type="submit"><i class="fa fa-user-plus" aria-hidden="true"></i> Zarejestruj się</button>
+				</div>
+			</form>
+			<a href="/">powrót do strony głównej</a>
+		</div>
+		</div>
+	</div>
+</section>
